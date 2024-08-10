@@ -1,0 +1,214 @@
+:root {
+  --color-primary: #eab676;
+  --color-secondary: #e28743;
+  --color-black: #222222;
+  --color-white: #ffffff;
+  --color-black-hover: #5a5a5a;
+  --color-white-darker: #f4f4fd;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  background-color: var(--color-white-darker);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+*::before *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.all-button {
+  color: white;
+  background: var(--color-primary);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  padding: 16px 32px;
+  transition: 0.3s;
+  font-family: "Ubuntu", sans-serif;
+}
+.all-button:hover {
+  background: var(--color-secondary);
+  cursor: pointer;
+}
+
+/*               *\
+       Header
+\*               */
+
+.header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transition: box-shadow 0.3s;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.header_mini {
+  box-shadow: 0px 4px 5px 0px rgba(129, 129, 129, 0.4);
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  margin-left: 50px;
+  gap: 60px;
+}
+
+.header-logo {
+  display: block;
+  color: var(--color-black);
+  font-weight: 800;
+  font-size: 30px;
+  transition: 0.3s;
+}
+.header-logo:hover {
+  color: var(--color-black-hover);
+}
+
+.header-adress {
+  display: block;
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  padding: 24px 0;
+  line-height: 1.5;
+  transition: 0.3s;
+}
+
+.header-adress:hover {
+  color: var(--color-black-hover);
+}
+
+/*               *\
+        Main
+\*               */
+
+.main-section {
+  height: 569px;
+  text-align: center;
+  padding: 188px 0;
+  background: url(/images/girl\ resting.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-title {
+  margin: 0 auto;
+  margin-top: 100px;
+  max-width: 1500px;
+  color: var(--color-black);
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 1.07;
+}
+
+.main-text {
+  margin: 0 auto 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.main-button {
+  font-weight: 600;
+  font-size: 25px;
+  width: 250px;
+  height: 80px;
+}
+
+.main-button:hover {
+  background: var(--color-secondary);
+  cursor: pointer;
+}
+
+/*               *\
+      servises
+\*               */
+
+.service-title {
+  color: var(--color-black);
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.07;
+}
+
+.services {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.services-list .services-card {
+  max-width: 450px;
+  height: 320px;
+  flex-basis: 100%;
+  text-align: center;
+  background-color: var(--color-white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: block;
+  max-width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.image-container .services-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+

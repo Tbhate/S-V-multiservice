@@ -1,10 +1,10 @@
 :root {
-  --color-primary: #eab676;
+  --color-primary: #f7ac68;
   --color-secondary: #e28743;
   --color-black: #222222;
   --color-white: #ffffff;
   --color-black-hover: #5a5a5a;
-  --color-white-darker: #f4f4fd;
+  --color-white-darker: #f8f2e8;
 }
 
 body {
@@ -39,7 +39,7 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1158px;
+  max-width: 1458px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -47,16 +47,41 @@ a {
 .all-button {
   color: white;
   background: var(--color-primary);
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: unset;
   border-radius: 50px;
+  z-index: 1;
+  position: relative;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   padding: 16px 32px;
   transition: 0.3s;
   font-family: "Ubuntu", sans-serif;
-}
-.all-button:hover {
-  background: var(--color-secondary);
+  transition: all 250ms;
+  overflow: hidden;
   cursor: pointer;
+}
+
+.all-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: var(--color-secondary);
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+.all-button:hover {
+  color: #e8e8e8;
+}
+
+.all-button:hover::before {
+  width: 100%;
 }
 
 /*               *\
@@ -67,7 +92,7 @@ a {
   position: fixed;
   height: 80px;
   width: 100%;
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgba(255, 247, 232, 0.5);
   top: 0;
   left: 0;
   z-index: 3;
@@ -97,10 +122,38 @@ a {
   color: var(--color-black);
   font-weight: 800;
   font-size: 30px;
-  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
 }
+
+.header-logo:focus,
 .header-logo:hover {
   color: var(--color-black-hover);
+}
+
+.header-logo:focus:after,
+.header-logo:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.header-logo:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-black-hover);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
 }
 
 .header-adress {
@@ -124,11 +177,13 @@ a {
 
 .main-section {
   height: 569px;
-  text-align: center;
+  text-align: right;
   padding: 188px 0;
-  background: url(/images/girlResting.jpg) no-repeat;
+  background-image: url(../images/girl-resting.jpg);
   background-size: cover;
   background-position: center;
+  box-shadow: 0px 4px 5px 0px rgba(129, 129, 129, 0.4);
+  
 }
 
 .main-title {
@@ -136,7 +191,7 @@ a {
   margin-top: 100px;
   max-width: 1500px;
   color: var(--color-black);
-  font-size: 90px;
+  font-size: calc(30px + (72 - 30) * ((100vw) / (1600 - 300)));
   font-weight: 700;
   line-height: 1.07;
 }
@@ -166,22 +221,22 @@ a {
 
 .service-title {
   color: var(--color-black);
-  font-size: 70px;
+  font-size: calc(25px + (60 - 25) * ((100vw) / (1600 - 300)));
   font-weight: 700;
   line-height: 1.07;
 }
 
 .services {
   text-align: center;
-  padding-top: 70px;
+  padding: 70px 0 70px 0;
 }
 
 .services-list .services-card {
-  max-width: 450px;
+  max-width: 300px;
   height: 320px;
   flex-basis: 100%;
   text-align: center;
-  background-color: var(--color-white);
+  background-color: var(--color-white-darker);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -211,4 +266,91 @@ a {
   display: block;
 }
 
+/*                     *\
+      Contact form
+\*                     */
 
+.contact-form {
+  box-shadow: 0px -4px 5px 0px rgba(129, 129, 129, 0.4);
+  padding-top: 100px;
+  background-color: var(--color-white-darker);
+}
+
+.contact-title {
+  margin: 0 auto;
+  max-width: 1500px;
+  color: var(--color-black);
+  font-size: calc(25px + (70 - 25) * ((100vw) / (1600 - 300)));
+  font-weight: 700;
+  line-height: 1.07;
+}
+
+.contact-text {
+  font-size: calc(12px + (16 - 12) * ((100vw) / (1600 - 300)));
+}
+
+
+.contact-info {
+  text-align: center;
+  max-width: 50%;
+}
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+
+.row .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.row .form-group .contact-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.row .form-group .box {
+  width: 200%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.row .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.row .form-group .box::placeholder {
+  opacity: 0.5;
+}
+
+.row .form-group .box:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+}
+
+.form-btn {
+  
+}

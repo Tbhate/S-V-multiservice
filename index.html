@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cleaning de luxe</title>
+    <link rel="icon" href="./images/logo.svg" type="image/svg+xml" />
+
     <link rel="stylesheet" href="./src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,215 +20,299 @@
     <header id="header" class="header">
       <div class="container">
         <nav class="header-box">
-          <a href="index.html">
+          <a href="#main">
             <button class="header-logo">Cleaning de luxe</button>
           </a>
           <ul class="header-nav">
             <li>
-              <a  href="">
-            <button class="header-adress">Vores service</button>
-            </a>
+              <a href="#services">
+                <button class="header-adress">Vores service</button>
+              </a>
             </li>
             <li>
-              <a  href="">
-            <button class="header-adress">Prissætning</button>
-            </a>
+              <a href="#">
+                <button class="header-adress">Prissætning</button>
+              </a>
             </li>
             <li>
-              <a href="">
-            <button class="header-adress">Om os</button>
-            </a>
+              <a href="#about-us">
+                <button class="header-adress">Om os</button>
+              </a>
             </li>
             <li>
-              <a href="">
-            <button class="header-adress">Kontakt os</button>
-            </a>
+              <a href="#contact">
+                <button class="header-adress">Kontakt os</button>
+              </a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="main-section">
+      <section class="main-section" id="main">
         <div class="container">
           <h1 class="main-title">RENGØRING PÅ HØJESTE NIVEAU</h1>
           <h3 class="main-text">Fra 250Kr./time (ekskl. moms)</h3>
-          <button class="main-button all-button">Få et tilbud</button>
+          <a href="#contact"
+            ><button class="main-button all-button">Få et tilbud</button></a
+          >
+
           <p class="main-text" style="margin-top: 250px">
             our job is to save your time
           </p>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
-         
           <h2 class="service-title">Services</h2>
           <ul class="services-list">
             <li class="services-card">
-              <!-- <div class="image-container">
-                <img
-                  class="services-foto"
-                  src="./images/bg-svg.jpg"
-                  alt="1"
-                  width="264"
-                />
-              </div> -->
+              <div class="services-icon-block">
+                <div>
+                  <svg class="services-icons">
+                    <use href="./images/symbol-defs.svg#icon-house"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="services-subtitle">Private huse</p>
+                  <a href="#contact">
+                    <button class="all-button services-btn">
+                      Fa et tilbud
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="services-card-info">
+                <p class="servises-info">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Repellendus, suscipit voluptatem odit omnis repudiandae
+                  beatae, at minus, eligendi accusamus dolor vel distinctio
+                  facere harum autem voluptatibus obcaecati sapiente ex quam
+                  esse? Labore.
+                </p>
+              </div>
+            </li>
+            <li class="services-card">
+              <div class="services-icon-block">
+                <div>
+                  <svg class="services-icons">
+                    <use href="./images/symbol-defs.svg#icon-desk"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="services-subtitle">Kontorer</p>
+                  <a href="#contact">
+                    <button class="all-button services-btn">
+                      Fa et tilbud
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="services-card-info">
+                <p class="servises-info">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Repellendus, suscipit voluptatem odit omnis repudiandae
+                  beatae, at minus, eligendi accusamus dolor vel distinctio
+                  facere harum autem voluptatibus obcaecati sapiente ex quam
+                  esse? Labore.
+                </p>
+              </div>
+            </li>
+            <li class="services-card">
+              <div class="services-icon-block">
+                <div>
+                  <svg class="services-icons">
+                    <use
+                      href="./images/symbol-defs.svg#icon-planting-flower"
+                    ></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="services-subtitle">Have</p>
+                  <a href="#contact">
+                    <button class="all-button services-btn">
+                      Fa et tilbud
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="services-card-info">
+                <p class="servises-info">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Repellendus, suscipit voluptatem odit omnis repudiandae
+                  beatae, at minus, eligendi accusamus dolor vel distinctio
+                  facere harum autem voluptatibus obcaecati sapiente ex quam
+                  esse? Labore.
+                </p>
+              </div>
+            </li>
+            <li class="services-card">
+              <div class="services-icon-block">
+                <div>
+                  <svg class="services-icons">
+                    <use href="./images/symbol-defs.svg#icon-boxes"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="services-subtitle">Efter afgang</p>
+                  <a href="#contact">
+                    <button class="all-button services-btn">
+                      Fa et tilbud
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="services-card-info">
+                <p class="servises-info">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Repellendus, suscipit voluptatem odit omnis repudiandae
+                  beatae, at minus, eligendi accusamus dolor vel distinctio
+                  facere harum autem voluptatibus obcaecati sapiente ex quam
+                  esse? Labore.
+                </p>
+              </div>
+            </li>
+            <li class="services-card">
+              <div class="services-icon-block">
+                <div>
+                  <svg class="services-icons">
+                    <use href="./images/symbol-defs.svg#icon-burger"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="services-subtitle">Efter afgang</p>
 
-              <div>
-                <p class="services-subtitle">Rengøring af private hjem</p>
-              <button class="all-button">
-                <a class="text-services" href="">Fa et tilbud</a>
-              </button>
+                  <a href="#contact"
+                    ><button class="all-button services-btn">
+                      Fa et tilbud
+                    </button>
+                  </a>
+                </div>
               </div>
               <div class="services-card-info">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, suscipit voluptatem odit omnis repudiandae beatae, at minus, eligendi accusamus dolor vel distinctio facere harum autem voluptatibus obcaecati sapiente ex quam esse? Labore.</p>
-              </div>
-            </li>
-            <li class="services-card">
-              <!-- <div class="image-container">
-                <img
-                  class="services-foto"
-                  src="./images/bg-svg.jpg"
-                  alt="1"
-                  width="264"
-                />
-              </div> -->
-              <div>
-                <p class="services-subtitle">Rengøring af kontorer</p>
-              <button class="all-button">
-                <a class="text-services" href="">Fa et tilbud</a>
-              </button>
-              </div>
-              <div class="services-card-info">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, suscipit voluptatem odit omnis repudiandae beatae, at minus, eligendi accusamus dolor vel distinctio facere harum autem voluptatibus obcaecati sapiente ex quam esse? Labore.</p>
-              </div>
-            </li>
-            <li class="services-card">
-              <!-- <div class="image-container">
-                
-                <img
-                  class="services-foto"
-                  src="./images/bg-svg.jpg"
-                  alt="1"
-                  width="264"
-                />
-              </div> -->
-              <div>
-                <p class="services-subtitle">Rengøring efter afrejse</p>
-              <button class="all-button">
-                <a class="text-services" href="">Fa et tilbud</a>
-              </button>
-              </div>
-              <div class="services-card-info">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, suscipit voluptatem odit omnis repudiandae beatae, at minus, eligendi accusamus dolor vel distinctio facere harum autem voluptatibus obcaecati sapiente ex quam esse? Labore.</p>
-              </div>
-            </li>
-            <li class="services-card">
-              <!-- <div class="image-container">
-                <img
-                  class="services-foto"
-                  src="./images/bg-svg.jpg"
-                  alt="1"
-                  width="264"
-                />
-              </div> -->
-              <div>
-                <p class="services-subtitle">Rengøring af haven</p>
-              <button class="all-button">
-                <a class="text-services" href="">Fa et tilbud</a>
-              </button>
-              </div>
-              <div class="services-card-info">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, suscipit voluptatem odit omnis repudiandae beatae, at minus, eligendi accusamus dolor vel distinctio facere harum autem voluptatibus obcaecati sapiente ex quam esse? Labore.</p>
-              </div>
-            </li>
-
-            <li class="services-card">
-              
-              <div>
-                <p class="services-subtitle">Rengøring af kontorer</p>
-              <button class="all-button" >
-                <a class="text-services" href="">Fa et tilbud</a>
-              </button>
-              </div>
-              <div class="services-card-info">
-                <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, suscipit voluptatem odit omnis repudiandae beatae, at minus, eligendi accusamus dolor vel distinctio facere harum autem voluptatibus obcaecati sapiente ex quam esse? Labore.</p>
+                <p class="servises-info">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Repellendus, suscipit voluptatem odit omnis repudiandae
+                  beatae, at minus, eligendi accusamus dolor vel distinctio
+                  facere harum autem voluptatibus obcaecati sapiente ex quam
+                  esse? Labore.
+                </p>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="about-us">
-        <div class="container"></div>
+      <section class="about-us" id="about-us">
+        <div class="container">
+          <h2 class="service-title about-us-header-title">Om os</h2>
+          
+          
+       
+          <div class="about-us-content">
+            <div class="info-container">
+              <h3 class="about-us-box-title">Hvorfor vælge os</h3>
+              <p class="about-us-box-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+                aliquam magni corrupti dolorum reprehenderit exercitationem
+                laboriosam repellendus nam eos ullam quo molestiae molestias,
+                esse laborum nemo at. Alias, aperiam. Inventore.
+              </p>
+              
+            </div>
+            <div class="photo-container">
+              <a href="https://www.facebook.com/profile.php?id=61552082786921" class="icon facebook">
+                <span class="tooltip">Facebook</span>
+                <svg
+                  viewBox="0 0 320 512"
+                  height="1.2em"
+                  fill="#222222"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  ></path>
+                </svg>
+              </a>
+              <img
+                class="about-us-photo"
+                src="./images/company-person.png"
+                alt=""
+              />
+            </div>
+            
+          </div>
+        </div>
       </section>
     </main>
     <footer>
-      <section class="contact-form">
-        <div class="container row">
-          <div class="contact-info">
-            <h3 class="contact-title">Kontakt</h3>
-            <p class="contact-text">
-              Hos Miljørent besvarer vi gerne dine spørgsmål. Ingen spørgsmål er
-              for store eller for små for os. Derfor er du velkommen til at
-              kontakte os via vores kontaktformular her på siden. Så besvarer vi
-              dit spørgsmål hurtigst muligt.
-            </p>
+      <section class="contact-form" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-info">
+              <h3 class="contact-title">Kontakt</h3>
+              <p class="contact-text">
+                Hos Cleaning de luxe besvarer vi gerne dine spørgsmål. Ingen
+                spørgsmål er for store eller for små for os. Derfor er du
+                velkommen til at kontakte os via vores kontaktformular her på
+                siden. Så besvarer vi dit spørgsmål hurtigst muligt.
+              </p>
+              
+            </div>
+
+            <form class="form" action="">
+              <div class="form-group">
+                <label class="contact-label" for="" name>Your name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id=""
+                  class="box"
+                  required
+                  placeholder="Enter your name.."
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="contact-label" for="email">Your email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id=""
+                  class="box"
+                  required
+                  placeholder="Enter your email.."
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-group">
+                <label class="contact-label" for="number">Your number</label>
+                <input
+                  type="number"
+                  name="number"
+                  id=""
+                  class="box"
+                  required
+                  placeholder="Enter your number.."
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-group">
+                <label class="contact-label" for="textarea">Your message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="box"
+                  cols="20"
+                  rows="5"
+                  required
+                  placeholder="Enter message"
+                  autocomplete="off"
+                ></textarea>
+              </div>
+              <button type="submit" class="all-button form-btn">Send</button>
+            </form>
           </div>
-
-          <form class="form" action="">
-            <div class="form-group">
-              <label class="contact-label" for="" name>Your name</label>
-              <input
-                type="text"
-                name="name"
-                id=""
-                class="box"
-                required
-                placeholder="Enter your name.."
-                autocomplete="off"
-              />
-            </div>
-
-            <div class="form-group">
-              <label class="contact-label" for="email">Your email</label>
-              <input
-                type="email"
-                name="email"
-                id=""
-                class="box"
-                required
-                placeholder="Enter your email.."
-                autocomplete="off"
-              />
-            </div>
-            <div class="form-group">
-              <label class="contact-label" for="number">Your number</label>
-              <input
-                type="number"
-                name="number"
-                id=""
-                class="box"
-                required
-                placeholder="Enter your number.."
-                autocomplete="off"
-              />
-            </div>
-            <div class="form-group">
-              <label class="contact-label" for="textarea">Your message</label>
-              <textarea
-                name="message"
-                id="message"
-                class="box"
-                cols="20"
-                rows="5"
-                required
-                placeholder="Enter message"
-                autocomplete="off"
-              ></textarea>
-            </div>
-
-            <button type="submit" class="all-button form-btn">Send</button>
-          </form>
         </div>
       </section>
     </footer>

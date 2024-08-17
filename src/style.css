@@ -5,6 +5,8 @@
   --color-white: #ffffff;
   --color-black-hover: #5a5a5a;
   --color-white-darker: #f8f2e8;
+  --color-blue: #0D98BA;
+  --color-blue-darker: #0a82a0;
 }
 
 body {
@@ -84,6 +86,20 @@ a {
 .all-button:hover::before {
   width: 100%;
 }
+
+
+
+
+.floating-btn {
+  align-items: center;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 90px;
+  height: 90px;
+  z-index: 9999;
+}
+
 
 /*               *\
        Header
@@ -242,6 +258,13 @@ a {
   cursor: pointer;
 }
 
+.phrase{
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+  margin-right: 35px;
+}
+
 /*               *\
       servises
 \*               */
@@ -255,16 +278,17 @@ a {
 
 .services {
   text-align: center;
-  padding-top: 70px;
+  padding: 70px 20px 0px 20px;
 }
 
 .services-card {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 10px 20px;
-  max-height: 120px;
+  padding: 20px 20px;
   flex-basis: 100%;
+  flex: 1 1 250px;
 
   background-color: var(--color-black);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -298,12 +322,11 @@ a {
 
 .services-list {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 25px;
-  flex-direction: column;
   border-radius: 20px;
+  flex-wrap: wrap;
 }
 
 .services-subtitle {
@@ -321,6 +344,7 @@ a {
 }
 .servises-info {
   color: var(--color-white-darker);
+  padding: 10px;
 }
 
 .services-btn {
@@ -344,7 +368,7 @@ a {
 
 .about-us-header-title {
   text-align: right;
-  color: var(--color-secondary);
+  color: var(--color-secondary);  
 }
 
 .about-us-content {
@@ -369,6 +393,12 @@ a {
   text-align: center;
 }
 
+@media (max-width: 650px) {
+  .info-container {
+    padding: 20px;
+  }
+}
+
 .about-us-photo {
   position: relative;
   max-width: 318px;
@@ -379,14 +409,23 @@ a {
 
 .about-us-box-title {
   color: var(--color-white-darker);
-  font-size: 40px;
+  font-size: calc(18px + (40 - 18) * ((100vw) / (1600 - 300)));
+  margin: 0;
 }
 .about-us-box-text {
   color: var(--color-white-darker);
+  font-size: calc(12px + (18 - 12) * ((100vw) / (1600 - 300)));
+
 }
 
 .photo-container {
   position: relative;
+}
+
+@media (max-width: 650px) {
+  .photo-container {
+    display: none;
+  }
 }
 
 .icon {
@@ -483,19 +522,24 @@ a {
   text-align: center;
   max-width: 50%;
   align-self: center;
+  flex: 1 1 250px;
 }
 .row {
   background-color: var(--color-black);
   border-radius: 12px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   padding: 50px;
-  box-shadow: inset 0px 10px 100px rgba(255, 255, 255, 0.356);
+  box-shadow: inset 5px 10px 100px rgba(255, 255, 255, 0.356);
 }
 
 .row .form {
   display: flex;
   flex-direction: column;
+  
+  flex: 1 1 250px;
   gap: 20px;
 }
 
@@ -514,7 +558,7 @@ a {
 }
 
 .row .form-group .box {
-  width: 200%;
+  width: 90%;
   padding: 12px 16px;
   border-radius: 8px;
   color: var(--color-white-darker);
@@ -552,6 +596,7 @@ a {
 
 .form-btn {
   font-weight: 600;
+  width: 40%;
   background-color: var(--color-white-darker);
   color: var(--color-black);
 }

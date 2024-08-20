@@ -11,5 +11,16 @@ window.addEventListener("scroll", function(){
 })
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const section = document.querySelector('.main-section');
+    const imageUrl = '../images/cleaning.jpg';
+    const img = new Image();
+    img.src = imageUrl;
+    img.onload = function() {
+        section.style.backgroundImage = `url(${imageUrl})`;
+    };
+});
+
+
 
 

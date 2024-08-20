@@ -305,11 +305,20 @@ a {
   height: 569px;
   text-align: right;
   padding: 188px 0;
-  background-image: none;
+  background-image: url(../images/cleaning.jpg);
   background-size: cover;
   background-position: center;
   box-shadow: 0px 4px 5px 0px rgba(129, 129, 129, 0.4);
   z-index: -1;
+}
+
+@media (max-width: 650px) {
+  .main-section {
+    background-color: #7c7c7c;
+    background-image: url(../images/company-person-mobile.jpg);
+    height: 400px;
+  }
+
 }
 
 
@@ -318,7 +327,7 @@ a {
   margin: 0 auto;
   margin-top: 100px;
   max-width: 1500px;
-  /* color: var(--color-black); */
+  color: var(--color-black);
   font-size: calc(30px + (72 - 30) * ((100vw) / (1600 - 300)));
   font-weight: 700;
   line-height: 1.07;
@@ -327,12 +336,14 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+
+
 .main-text {
   margin: 0 auto 50px;
   font-size: 20px;
   font-size: calc(12px + (20 - 12) * ((100vw) / (1600 - 300)));
   font-weight: 600;
-  /* color: var(--color-black); */
+  color: var(--color-black);
   background-image: linear-gradient(90deg, #080807, #0f0703c0);
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
@@ -381,10 +392,13 @@ a {
 \*               */
 
 .service-title {
-  color: var(--color-black);
   font-size: calc(25px + (60 - 25) * ((100vw) / (1600 - 300)));
   font-weight: 700;
   line-height: 1.07;
+  background: linear-gradient(to bottom right, #10232ed3, var(--color-black));
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent;
 }
 
 .services {
@@ -401,7 +415,7 @@ a {
   flex-basis: 100%;
   flex: 1 1 250px;
 
-  background: linear-gradient(to bottom right, #788181a2, #1981bd);
+  background: linear-gradient(to bottom right, #10232ed3, var(--color-black));
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08),
     inset 0 0px 50px rgba(255, 255, 255, 0.356);
@@ -463,9 +477,9 @@ a {
 
 .services-card-info {
   background-color: rgba(100, 100, 100, 0.4);
-
   max-width: 80%;
-  border-radius: 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(100, 100, 100, 0.4);
 }
 
 @media (max-width: 644px) {
@@ -483,7 +497,29 @@ a {
   margin: 0;
   overflow-y: auto;
   white-space: normal;
+  max-height: 170px;
 }
+@media (max-width: 1274px) {
+  .servises-info {
+    max-height: 120px;
+  }
+}
+
+
+.servises-info::-webkit-scrollbar {
+  width: 6px; 
+}
+
+.servises-info::-webkit-scrollbar-track {
+  background: rgba(100, 100, 100, 0.418); 
+  border-radius: 8px; 
+}
+.servises-info::-webkit-scrollbar-thumb {
+  background-color: var(--color-black-hover); 
+  border-radius: 8px; 
+  border: 2px solid rgba(100, 100, 100, 0.527); 
+}
+
 @media (max-width: 644px) {
   .servises-info {
     max-height: 85px;

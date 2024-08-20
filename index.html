@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="./src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600&family=Raleway:wght@800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
@@ -47,21 +45,19 @@
             </svg>
           </button>
           <div class="menu-mobile js-menu-container">
-            
-        
             <ul class="mobile-nav-list">
               <li>
-                <a href="#services"  class="nav-link">
+                <a href="#services" class="nav-link">
                   <button class="header-adress">Vores service</button>
                 </a>
               </li>
               <li>
-                <a href="#about-us"  class="nav-link">
+                <a href="#about-us" class="nav-link">
                   <button class="header-adress">Om os</button>
                 </a>
               </li>
               <li>
-                <a href="#contact"  class="nav-link">
+                <a href="#contact" class="nav-link">
                   <button class="header-adress">Kontakt os</button>
                 </a>
               </li>
@@ -88,7 +84,6 @@
         </div>
       </section>
       <section class="services" id="services">
-        <!-- <div class="container"> -->
         <h2 class="service-title">Services</h2>
         <ul class="services-list">
           <li class="services-card">
@@ -101,7 +96,7 @@
               <div>
                 <p class="services-subtitle">Private huse</p>
                 <a href="#contact">
-                  <button class="all-button services-btn">Fa et tilbud</button>
+                  <button class="all-button services-btn">Få et tilbud</button>
                 </a>
               </div>
             </div>
@@ -124,7 +119,7 @@
               <div>
                 <p class="services-subtitle">Kontorer</p>
                 <a href="#contact">
-                  <button class="all-button services-btn">Fa et tilbud</button>
+                  <button class="all-button services-btn">Få et tilbud</button>
                 </a>
               </div>
             </div>
@@ -149,7 +144,7 @@
               <div>
                 <p class="services-subtitle">Have</p>
                 <a href="#contact">
-                  <button class="all-button services-btn">Fa et tilbud</button>
+                  <button class="all-button services-btn">Få et tilbud</button>
                 </a>
               </div>
             </div>
@@ -172,7 +167,7 @@
               <div>
                 <p class="services-subtitle">Efter afgang</p>
                 <a href="#contact">
-                  <button class="all-button services-btn">Fa et tilbud</button>
+                  <button class="all-button services-btn">Få et tilbud</button>
                 </a>
               </div>
             </div>
@@ -193,10 +188,10 @@
                 </svg>
               </div>
               <div>
-                <p class="services-subtitle">Efter afgang</p>
+                <p class="services-subtitle">Andre</p>
 
                 <a href="#contact"
-                  ><button class="all-button services-btn">Fa et tilbud</button>
+                  ><button class="all-button services-btn">Få et tilbud</button>
                 </a>
               </div>
             </div>
@@ -210,7 +205,6 @@
             </div>
           </li>
         </ul>
-        <!-- </div> -->
       </section>
       <section class="about-us" id="about-us">
         <div class="container">
@@ -218,12 +212,18 @@
 
           <div class="about-us-content">
             <div class="info-container">
-              <h3 class="about-us-box-title">Hvorfor vælge os</h3>
+              <h3 class="about-us-box-title">Om Cleaning de luxe</h3>
               <p class="about-us-box-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
-                aliquam magni corrupti dolorum reprehenderit exercitationem
-                laboriosam repellendus nam eos ullam quo molestiae molestias,
-                esse laborum nemo at. Alias, aperiam. Inventore.
+                Hos Cleaning de luxe er vi dedikerede til at levere den højeste
+                kvalitet af rengøringstjenester. Vores erfarne team arbejder
+                hårdt og effektivt for at sikre, at dine lokaler altid fremstår
+                rene og velplejede. Vi stræber efter at levere en hurtig og
+                grundig service, der overgår dine forventninger.<br />
+                Vores mål er at gøre din hverdag lettere ved at tage ansvaret
+                for rengøringen, så du kan fokusere på det, der virkelig betyder
+                noget. Hos Cleaning de luxe går vi aldrig på kompromis med
+                kvaliteten, og vi arbejder altid hurtigt og effektivt for at
+                levere resultater, der gør dig tilfreds.
               </p>
             </div>
             <div class="photo-container">
@@ -252,8 +252,6 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer>
       <section class="contact-form" id="contact">
         <div class="container">
           <div class="row">
@@ -266,7 +264,7 @@
                 siden. Så besvarer vi dit spørgsmål hurtigst muligt.
               </p>
               <div>
-                <a href="cleaningdeluxe123@gmail.com">
+                <a href="mailto:cleaningdeluxe123@gmail.com">
                   <svg class="contact-icon">
                     <use href="./images/footer.svg#icon-email-footer"></use>
                   </svg>
@@ -287,46 +285,51 @@
               </div>
             </div>
 
-            <form class="form" action="">
+            <form
+              class="form"
+              id="contact-form"
+              action="https://formspree.io/f/xldrwplb"
+              method="POST"
+            >
               <div class="form-group">
-                <label class="contact-label" for="" name>Your name</label>
+                <label class="contact-label" for="name">Dit navn</label>
                 <input
                   type="text"
                   name="name"
                   id=""
                   class="box"
                   required
-                  placeholder="Enter your name.."
+                  placeholder="Indtast dit navn.."
                   autocomplete="off"
                 />
               </div>
 
               <div class="form-group">
-                <label class="contact-label" for="email">Your email</label>
+                <label class="contact-label" for="email">Din e-mail</label>
                 <input
                   type="email"
                   name="email"
                   id=""
                   class="box"
                   required
-                  placeholder="Enter your email.."
+                  placeholder="Indtast din e-mail.."
                   autocomplete="off"
                 />
               </div>
               <div class="form-group">
-                <label class="contact-label" for="number">Your number</label>
+                <label class="contact-label" for="number">Dit nummer</label>
                 <input
                   type="number"
                   name="number"
                   id=""
                   class="box"
                   required
-                  placeholder="Enter your number.."
+                  placeholder="Indtast dit nummer.."
                   autocomplete="off"
                 />
               </div>
               <div class="form-group">
-                <label class="contact-label" for="textarea">Your message</label>
+                <label class="contact-label" for="textarea">Din besked</label>
                 <textarea
                   name="message"
                   id="message"
@@ -334,27 +337,40 @@
                   cols="20"
                   rows="5"
                   required
-                  placeholder="Enter message"
+                  placeholder="Indtast besked"
                   autocomplete="off"
                 ></textarea>
               </div>
-              <button type="submit" class="all-button form-btn">Send</button>
+              <div class="form-submit">
+                <button type="submit" class="all-button form-btn">Send</button>
+                <p id="response-message"></p>
+              </div>
             </form>
           </div>
         </div>
       </section>
+    </main>
+    <footer>
+      <section class="wrapper-footer">
+        <ul class="footer-list container">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61552082786921">
+              <svg class="footer-icon">
+                <use href="./images/footer.svg#icon-facebook-footer"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-text">©2024 Cleaning de luxe</li>
+          <li>
+            <a class="footer-text" href="tel:+4581941150">+4581941150</a>
+          </li>
+        </ul>
+      </section>
     </footer>
-
-    <a>
-      <button class="floating-btn all-button">
-        <svg class="floating-icon">
-          <use href="./images/footer.svg#icon-facebook-footer"></use>
-        </svg>
-      </button>
-    </a>
 
     <script src="./src/mobile-menu.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script>
     <script src="./src/index.js"></script>
+    <script src="./src/contact-form.js"></script>
   </body>
 </html>

@@ -17,16 +17,67 @@ window.addEventListener("scroll", function () {
 
 // slider !before/after!
 
-const range = document.querySelector('.slider-range');
-const beforeImage = document.querySelector('.before');
+const ranges = document.querySelectorAll('.slider-range');
+const beforeImages = document.querySelectorAll('.before');
 
-range.addEventListener('input', function() {
-  const value = this.value;
-  beforeImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+ranges.forEach((range, index) => {
+  range.addEventListener('input', function() {
+    const value = this.value;
+    beforeImages[index].style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+  });
 });
 
 
+// slider
 
+let scrollContainer = document.querySelector(".gallery");
+let backBtn = document.getElementById("backBtn");
+let nextBtn = document.getElementById("nextBtn");
+
+
+let mediaQuery1100 = window.matchMedia("(max-width: 1100px)");
+let mediaQuery810 = window.matchMedia("(max-width: 810px)");
+
+
+function handleMediaQueryChange() {
+    if (mediaQuery810.matches) {
+       
+        nextBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 188; 
+        });
+
+        backBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 188; 
+        });
+    } else if (mediaQuery1100.matches) {
+        nextBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 555; 
+        });
+
+        backBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 555; 
+        });
+    } else {
+        nextBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 830; 
+        });
+
+        backBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 830; 
+        });
+    }
+}
+
+handleMediaQueryChange();
+
+mediaQuery1100.addEventListener("change", handleMediaQueryChange);
+mediaQuery810.addEventListener("change", handleMediaQueryChange);
 
 
 

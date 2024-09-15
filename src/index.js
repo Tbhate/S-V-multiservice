@@ -21,10 +21,10 @@ const ranges = document.querySelectorAll('.slider-range');
 const beforeImages = document.querySelectorAll('.before');
 
 ranges.forEach((range, index) => {
-  range.addEventListener('input', function() {
-    const value = this.value;
-    beforeImages[index].style.clipPath = `inset(0 ${100 - value}% 0 0)`;
-  });
+    range.addEventListener('input', function () {
+        const value = this.value;
+        beforeImages[index].style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+    });
 });
 
 
@@ -41,35 +41,35 @@ let mediaQuery810 = window.matchMedia("(max-width: 810px)");
 
 function handleMediaQueryChange() {
     if (mediaQuery810.matches) {
-       
+
         nextBtn.addEventListener("click", () => {
             scrollContainer.style.scrollBehavior = "smooth";
-            scrollContainer.scrollLeft += 188; 
+            scrollContainer.scrollLeft += 182;
         });
 
         backBtn.addEventListener("click", () => {
             scrollContainer.style.scrollBehavior = "smooth";
-            scrollContainer.scrollLeft -= 188; 
+            scrollContainer.scrollLeft -= 182;
         });
     } else if (mediaQuery1100.matches) {
         nextBtn.addEventListener("click", () => {
             scrollContainer.style.scrollBehavior = "smooth";
-            scrollContainer.scrollLeft += 555; 
+            scrollContainer.scrollLeft += 555;
         });
 
         backBtn.addEventListener("click", () => {
             scrollContainer.style.scrollBehavior = "smooth";
-            scrollContainer.scrollLeft -= 555; 
+            scrollContainer.scrollLeft -= 555;
         });
     } else {
         nextBtn.addEventListener("click", () => {
             scrollContainer.style.scrollBehavior = "smooth";
-            scrollContainer.scrollLeft += 830; 
+            scrollContainer.scrollLeft += 830;
         });
 
         backBtn.addEventListener("click", () => {
             scrollContainer.style.scrollBehavior = "smooth";
-            scrollContainer.scrollLeft -= 830; 
+            scrollContainer.scrollLeft -= 830;
         });
     }
 }

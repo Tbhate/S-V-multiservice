@@ -547,29 +547,63 @@ a {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  padding: 20px 20px;
+  padding: 15px 15px;
   flex-basis: 100%;
   flex: 1 1 250px;
-  min-height: 410px;
+  height: auto;
   background: linear-gradient(to bottom right, #10232ed3, var(--color-black));
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08),
     inset 0 0px 50px rgba(255, 255, 255, 0.356);
   border-radius: 12px;
 }
+@media (min-width: 1273px) and (max-width: 1961px) {
+  .services-card:nth-child(4) {
+    min-height: 370px;
+  }
+}
+
+
+@media (max-width: 1966px) {
+  .services-card {
+    min-height: 300px;
+  }
+}
+
+
+@media (max-width: 1588px) {
+  .services-card {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 1246px) {
+  .services-card {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 956px) {
+  .services-card {
+    min-height: 350px;
+  }
+}
+
+
+@media (max-width: 929px) {
+  .services-card {
+    min-height: 220px;
+  }
+}
 
 @media (max-width: 644px) {
   .services-card {
-    height: 200px;
+    min-height: 200px;
 
   }
 }
 
-@media (max-width: 1636px) {
-  .services-card {
-    min-height: 0;
-  }
-}
+
 
 .services-icons {
   width: 100px;
@@ -589,6 +623,7 @@ a {
 }
 
 .services-icon-block {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -631,6 +666,7 @@ a {
 .services-card-info {
   background-color: rgba(100, 100, 100, 0.4);
   max-width: 80%;
+  /* min-height: 180px; */
   border-radius: 4px;
   border: 1px solid rgba(100, 100, 100, 0.4);
 }
@@ -651,13 +687,36 @@ a {
   overflow-y: auto;
   white-space: normal;
   max-height: 170px;
+  max-width: 650px;
 }
-
 @media (max-width: 1274px) {
   .servises-info {
     max-height: 120px;
   }
 }
+
+.servises-price{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  font-weight: 600;
+  font-size: calc(12px + (15 - 12) * ((100vw) / (1600 - 300)));
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary), var(--color-white-darker), var(--color-primary), var(--color-primary));
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 3s ease-in-out infinite;
+}
+
+@media (max-width: 624px) {
+  .servises-price{
+    left: -10px;
+    bottom: -10px;
+  }
+}
+
+
+
 
 .servises-info::-webkit-scrollbar {
   width: 6px;
@@ -1021,6 +1080,7 @@ a {
   display: flex;
   overflow-x: scroll;
   background: none;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 1100px) {

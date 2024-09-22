@@ -11,6 +11,22 @@ window.addEventListener("scroll", function () {
 })
 
 
+// loader
+
+window.addEventListener('load', function () {
+    
+    setTimeout(function() {
+        
+        document.getElementById('loader').style.opacity = '0';
+        
+        setTimeout(function() {
+            document.getElementById('loader').style.display = 'none';
+        }, 1000);  
+        
+       
+        document.querySelector('.content').classList.add('show');
+    }, 1800);  
+});
 
 
 

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(data => {
         if (data.ok) {
           responseMessage.textContent = 'Din besked blev sendt med succes!';
-          responseMessage.style.color = '#e28743'; 
+          responseMessage.style.color = '#f8f2e8'; 
           responseMessage.classList.add('visible'); 
           form.reset(); 
         } else {

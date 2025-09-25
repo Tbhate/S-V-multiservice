@@ -692,7 +692,29 @@ a {
 
 .services {
   text-align: center;
-  padding: 70px 20px 0px 20px;
+  background-image: url(/images/bgcleanin.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 70px 20px 70px 20px;
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 5%,
+    black 95%,
+    transparent
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 5%,
+    black 95%,
+    transparent
+  );
+  mask-repeat: no-repeat;
+  mask-size: cover;
 }
 
 .services-card {
@@ -704,12 +726,14 @@ a {
   flex-basis: 100%;
   flex: 1 1 250px;
   height: auto;
-  background: linear-gradient(to bottom right, #10232ed3, var(--color-black));
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08),
-    inset 0 0px 50px rgba(255, 255, 255, 0.356);
+  background: linear-gradient(to bottom right, #6bc465, #459f3f);
+
   border-radius: 12px;
+
+  background: rgba(75, 150, 80, 0.3);
+  backdrop-filter: blur(8px);
 }
+
 @media (min-width: 1273px) and (max-width: 1961px) {
   .services-card:nth-child(4) {
     min-height: 370px;
@@ -755,7 +779,7 @@ a {
 .services-icons {
   width: 100px;
   padding: 1rem;
-  fill: var(--color-white-darker);
+  fill: #222222;
 }
 
 @media (max-width: 644px) {
@@ -797,14 +821,8 @@ a {
   font-size: calc(16px + (18 - 16) * ((100vw) / (1600 - 300)));
 
   margin-top: 0;
-  color: var(--color-white-darker);
 
-  background: linear-gradient(
-    270deg,
-    var(--color-white-darker),
-    var(--color-white-darker),
-    #4a5b63
-  );
+  background: linear-gradient(270deg, #222222, #222222, #030303);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -812,7 +830,7 @@ a {
 }
 
 .services-card-info {
-  background-color: rgba(100, 100, 100, 0.4);
+  background-color: rgba(2, 2, 2, 0.6);
   max-width: 80%;
   /* min-height: 180px; */
   border-radius: 4px;
@@ -849,15 +867,7 @@ a {
   left: 10px;
   font-weight: 600;
   font-size: calc(12px + (15 - 12) * ((100vw) / (1600 - 300)));
-  /* background: linear-gradient(
-    90deg,
-    #f8ce43,
-    #f8ce43,
-    var(--color-white-darker),
-    #f8ce43,
-    var(--color-primary)
-  ); */
-  background: linear-gradient(270deg, #ffffff, #ffffff, #f8ce43);
+  background: linear-gradient(270deg, #222, #222, #000000);
 
   background-size: 200% 200%;
   -webkit-background-clip: text;
@@ -873,18 +883,20 @@ a {
 }
 
 .servises-info::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
+  height: 10px;
 }
 
 .servises-info::-webkit-scrollbar-track {
-  background: rgba(100, 100, 100, 0.418);
+  background: rgba(207, 207, 207, 0.418);
   border-radius: 8px;
 }
 
 .servises-info::-webkit-scrollbar-thumb {
-  background-color: var(--color-black-hover);
+  background-color: rgba(78, 78, 78, 0.685);
   border-radius: 8px;
-  border: 2px solid rgba(100, 100, 100, 0.527);
+  border: 2px solid rgba(155, 155, 155, 0.185);
+  cursor: pointer;
 }
 
 @media (max-width: 644px) {
@@ -897,7 +909,7 @@ a {
   }
 
   .servises-info::-webkit-scrollbar-track {
-    background: rgba(100, 100, 100, 0.418);
+    background: rgba(192, 192, 192, 0.418);
     border-radius: 8px;
   }
 
@@ -923,7 +935,7 @@ a {
 }
 
 .services-btn::before {
-  background-color: rgb(133, 133, 133);
+  background-color: #222;
 }
 
 /*                     *\
@@ -949,6 +961,8 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  background: rgba(69, 160, 75, 0.8);
+  backdrop-filter: blur(8px);
 }
 
 @media (max-width: 650px) {
@@ -1281,6 +1295,8 @@ a {
 .contact-form {
   box-shadow: 0px -4px 5px 0px rgba(129, 129, 129, 0.4);
   padding: 100px 0;
+  background: rgba(69, 160, 75, 0.8);
+  backdrop-filter: blur(8px);
 }
 
 .contact-title {
@@ -1324,14 +1340,18 @@ a {
 }
 
 .row {
-  background: linear-gradient(135deg, rgb(36, 110, 78), var(--color-secondary));
+  background: linear-gradient(
+    135deg,
+    rgba(36, 110, 78, 0.349),
+    rgb(36, 110, 78)
+  );
   border-radius: 12px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   padding: 50px;
-  box-shadow: 0px 1px 10px #cbbeac;
+  box-shadow: 0px 1px 10px rgba(69, 160, 75, 0.8);
 }
 
 .row .form {
@@ -1435,6 +1455,8 @@ a {
 
 .wrapper-footer {
   border-top: 1px solid #246e4e49;
+  background: rgba(69, 160, 75, 0.8);
+  backdrop-filter: blur(8px);
 }
 
 .footer-list {
@@ -1452,7 +1474,7 @@ a {
 .footer-text {
   font-weight: 300;
   font-size: 12px;
-  color: #246e4ea6;
+  color: #0d271ca6;
 }
 
 .footer-icon {

@@ -1,592 +1,753 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S&V MULTISERVISE</title>
 
-  <title>Cleaning de luxe</title>
+    <meta
+      name="description"
+      content="Hos S&V MULTISERVISE leverer vi kvalitetsrengøring med fokus på effektivitet, så dine lokaler altid fremstår rene og velplejede."
+    />
 
-  <meta name="description" content="Hos Cleaning de Luxe leverer vi kvalitetsrengøring med fokus på effektivitet, så dine lokaler altid fremstår rene og velplejede." /> 
+    <meta
+      name="keywords"
+      content="S&V MULTISERVISE, Rengøring i Aarhus, professionel rengøring, Rengøring af hus, Kontorrengøring"
+    />
 
-  <meta name="keywords" content="Cleaning de Luxe, Rengøring i Aarhus, professionel rengøring, Rengøring af hus, Kontorrengøring" />
+    <link rel="icon" href="/images/whitelogo.png" type="image/png" />
 
-  <link rel="icon" href="/images/logoo.png" type="image/png"/>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600&family=Raleway:wght@800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-
-  <link rel="stylesheet" href="./src/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600&family=Raleway:wght@800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-
-  <div  id="loader">
-    <div class="loader"></div>
-  </div>
-  <div class="content">
-  <header id="header" class="header">
-    
-    
-    <div class="container">
-
-
-      <nav class="header-box">
-        <a href="#main">
-          <button class="header-logo">Cleaning de luxe</button>
-        </a>
-        <ul class="header-nav">
-          <li>
-            <a href="#services">
-              <button class="header-adress">Vores tjenester</button>
-            </a>
-          </li>
-          <li>
-            <a href="#about-us">
-              <button class="header-adress">Om os</button>
-            </a>
-          </li>
-          <li>
-            <a href="#contact">
-              <button class="header-adress">Kontakt os</button>
-            </a>
-          </li>
-        </ul>
-
-        <button type="button" class="burger-button js-open-menu">
-          <svg class="burger-icon">
-            <use href="./images/symbol-defs.svg#icon-burger"></use>
-          </svg>
-        </button>
-        <div class="menu-mobile js-menu-container">
-          <ul class="mobile-nav-list">
-            <li>
-              <a href="#services" class="nav-link">
-                <button class="header-adress">Vores service</button>
-              </a>
-            </li>
-            <li>
-              <a href="#about-us" class="nav-link">
-                <button class="header-adress">Om os</button>
-              </a>
-            </li>
-            <li>
-              <a href="#contact" class="nav-link">
-                <button class="header-adress">Kontakt os</button>
-              </a>
-            </li>
-          </ul>
-          <button type="button" class="modal-close js-close-menu">
-            <svg class="close-button">
-              <use href="./images/symbol-defs.svg#icon-modal-close"></use>
-            </svg>
-          </button>
-        </div>
-      </nav>
+  <body>
+    <div id="loader">
+      <div class="loader"></div>
     </div>
-  </header>
-  <main>
-    <section class="main-section" id="main">
-      <div class="container">
-        <h1 class="main-title">RENGØRING PÅ HØJESTE NIVEAU</h1>
-        <h3 class="main-text">Fra 280Kr./time (ekskl. moms)</h3>
-        <a href="#contact"><button class="main-button all-button">Få et tilbud</button>
-        </a>
+    <div class="content">
+      <header id="header" class="header">
+        <div class="container">
+          <nav class="header-box">
+            <a href="#main">
+              <button class="header-logo">S&V MULTISERVISE</button>
+            </a>
+            <ul class="header-nav">
+              <li>
+                <a href="#services">
+                  <button class="header-adress">Vores tjenester</button>
+                </a>
+              </li>
+              <li>
+                <a href="#about-us">
+                  <button class="header-adress">Om os</button>
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                  <button class="header-adress">Kontakt os</button>
+                </a>
+              </li>
+            </ul>
 
-        <p class="phrase">pæne omgivelser og tid til det du elsker</p>
-      </div>
-    </section>
-
-    <section class="why-us">
-      <div class="container container-why-us-window">
-        <h2 class="why-us-title">Hvorfor vælge os?</h2>
-        <div class="why-us-window">
-          <p class="why-us-text">
-            <span class="why-us-subtitle delay1">**Særligt tilbud**</span> book din første rengøring i dag og få 20 %
-            rabat! Forvandl dit rum til en skinnende oase. Kontakt os nu for
-            et gratis tilbud!
-          </p>
-        </div>
-        <div class="why-us-window-center">
-          <div class="why-us-windows-container">
-            <div class="why-us-window">
-              <p class="why-us-text">
-                <span class="why-us-subtitle delay2">**Professionelt team**</span> vores erfarne rengøringsassistenter
-                er
-                forpligtet til at yde en førsteklasses service. Førsteklasses
-                service.
-              </p>
-            </div>
-
-
-
-            <div class="why-us-window">
-              <p class="why-us-text">
-                <span class="why-us-subtitle delay3">**Fleksible tidsplaner**</span> vi tilpasser os dit travle liv ved
-                at
-                lave skræddersyede rengøringsplaner. skræddersyede
-                rengøringsplaner.
-              </p>
-            </div>
-          </div>
-          <img src="./images/logo.jpg" alt="" class="why-us-window-img">
-        </div>
-        <div class="why-us-window">
-          <p class="why-us-text">
-            <span class="why-us-subtitle delay4">**Miljøvenlige produkter**</span> vi bruger sikre, ugiftige
-            rengøringsprodukter til et sundere hjem. sundt hjem.
-          </p>
-        </div>
-
-
-        <div class="why-us-window">
-          <p class="why-us-text">
-            <span class="why-us-subtitle delay5">**Tilfredshedsgaranti**</span> vi er ikke tilfredse, før du er det!
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="services" id="services">
-      <h2 class="service-title">VORES TJENESTER</h2>
-      <ul class="services-list">
-        <li class="services-card">
-          <div class="services-icon-block">
-            <div>
-              <svg class="services-icons">
-                <use href="./images/symbol-defs.svg#icon-house"></use>
-              </svg>
-            </div>
-            <div>
-              <p class="services-subtitle">Privatrengøring</p>
-              <a href="#contact">
-                <button class="all-button services-btn">Få et tilbud</button>
-              </a>
-            </div>
-            <p class="servises-price">
-              Priser fra kr. 350
-            </p>
-          </div>
-          <div class="services-card-info">
-            <p class="servises-info">
-              Trænger dit hjem til en grundig rengøring? Lad os sikre dig
-              pålidelig og effektiv privat rengøring, så du kan bruge mere tid
-              på det, du holder af! Vi klarer alt fra loft til gulv og fra
-              køkken til badeværelse. Så nyd bar dit rent, skinnende støv- og
-              pletfrit hjem!
-            </p>
-          </div>
-          
-        </li>
-        <li class="services-card">
-          <div class="services-icon-block">
-            <div>
-              <svg class="services-icons">
-                <use href="./images/symbol-defs.svg#icon-desk"></use>
-              </svg>
-            </div>
-            <div>
-              <p class="services-subtitle">Erhvervs- og kontorrengørning</p>
-              <a href="#contact">
-                <button class="all-button services-btn">Få et tilbud</button>
-              </a>
-            </div>
-            <p class="servises-price">
-              Priser fra kr. 370
-            </p>
-          </div>
-          <div class="services-card-info">
-            <p class="servises-info">
-              Er dit kontor eller produktion blevet overset i rengøringen? Lad
-              os tilbyde skræddersyede renrøringstjenester, der sikrer et
-              sundt og inspirerende arbejdsmiljø. Brug vores professional team
-              og af de bedste produkter og metoder for at fjerne støv, snavs
-              og bakterier.
-
-            </p>
-          </div>
-          
-        </li>
-        <li class="services-card">
-          <div class="services-icon-block">
-            <div>
-              <svg class="services-icons">
-                <use href="./images/symbol-defs.svg#icon-planting-flower"></use>
-              </svg>
-            </div>
-            <div>
-              <p class="services-subtitle">Havearbejde</p>
-              <a href="#contact">
-                <button class="all-button services-btn">Få et tilbud</button>
-              </a>
-            </div>
-            <p class="servises-price" style="left: -20px;"> 
-              Priser fra kr. 380
-            </p>
-          </div>
-          <div class="services-card-info">
-            <p class="servises-info">
-              Trænger din have til kærlig pleje og opmærksomhed? Lad os hjælpe
-              dig med at skabe den have, du altid har drømt om! Vores
-              dedikerede team af haveeksperter står klar til at udføre alt fra
-              beskæring og græsslåning til anlæggelse af smukke blomsterbede. <br>
-
-            </p>
-          </div>
-          
-        </li>
-        <li class="services-card">
-          <div class="services-icon-block">
-            <div ">
-              <svg   class=" services-icons">
-              <use href="./images/symbol-defs.svg#icon-boxes"></use>
-              </svg>
-            </div>
-            <div>
-              <p class="services-subtitle">Rengøring efter renovering</p>
-              <a href="#contact">
-                <button class="all-button services-btn">Få et tilbud</button>
-              </a>
-            </div>
-            <p class="servises-price">
-              Priser fra kr. 370
-            </p>
-          </div>
-          <div class="services-card-info">
-            <p class="servises-info">
-              Har du lige gennemført en renovering? Lad os hjælpe med at
-              fjerne alt støv og rod! Vores specialiserede rengøring efter
-              renovering sørger for, at dit hjem er klar til at blive nydt.
-
-
-            </p>
-          </div>
-          
-        </li>
-        <li class="services-card">
-          <div class="services-icon-block">
-            <div>
-              <svg class="services-icons">
-                <use href="./images/move-repair.svg#icon-moving"></use>
-              </svg>
-            </div>
-            <div>
-              <p class="services-subtitle">Flyterengøring og slutrengøring</p>
-              <a href="#contact">
-                <button class="all-button services-btn">Få et tilbud</button>
-              </a>
-            </div>
-            <p class="servises-price">
-              Priser fra kr. 360
-            </p>
-          </div>
-          <div class="services-card-info">
-            <p class="servises-info">
-              Skal du flytte? Eller bar at gøre rent omfattende og grundigt? Lad os tage os af denne opgave! Vores
-              specialiserede (flytterengøring / hovedrengøring) sikrer, at dit hjem fremstår perfekt og skinnende rent, så
-              du kan fokusere på det, der virkelig betyder noget. <br>
-
-            </p>
-          </div>
-          
-        </li>
-        <li class="services-card">
-          <div class="services-icon-block">
-            <div>
-              <svg class="services-icons">
-                <use href="./images/move-repair.svg#icon-repair"></use>
-              </svg>
-            </div>
-            <div>
-              <p class="services-subtitle">Reparationsarbejde</p>
-              <a href="#contact">
-                <button class="all-button services-btn">Få et tilbud</button>
-              </a>
-            </div>
-            <p class="servises-price">
-              Priser fra kr. 360
-            </p>
-          </div>
-          <div class="services-card-info">
-            <p class="servises-info">
-              Trænger din have til kærlig pleje og opmærksomhed? Lad os hjælpe
-              dig med at skabe den have, du altid har drømt om! Vores
-              dedikerede team af haveeksperter står klar til at udføre alt fra
-              beskæring og græsslåning til anlæggelse af smukke blomsterbede.
-
-            </p>
-          </div>
-          
-        </li>
-
-
-        <li class="services-card">
-          <div class="services-icon-block">
-            <div>
-              <svg class="services-icons">
+            <button type="button" class="burger-button js-open-menu">
+              <svg class="burger-icon">
                 <use href="./images/symbol-defs.svg#icon-burger"></use>
               </svg>
+            </button>
+            <div class="menu-mobile js-menu-container">
+              <ul class="mobile-nav-list">
+                <li>
+                  <a href="#services" class="nav-link">
+                    <button class="header-adress header-js">
+                      Vores service
+                    </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#about-us" class="nav-link">
+                    <button class="header-adress header-js">Om os</button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" class="nav-link">
+                    <button class="header-adress header-js">Kontakt os</button>
+                  </a>
+                </li>
+              </ul>
+              <button type="button" class="modal-close js-close-menu">
+                <svg class="close-button">
+                  <use href="./images/symbol-defs.svg#icon-modal-close"></use>
+                </svg>
+              </button>
             </div>
-            <div>
-              <p class="services-subtitle">Og mere...</p>
-
-              <a href="#contact"><button class="all-button services-btn">Få et tilbud</button>
-              </a>
-            </div>
-            <p class="servises-price">
-              
-            </p>
-          </div>
-          <div class="services-card-info">
-            <p class="servises-info">
-              Tøv ikke med at spørge efter vores skræddersyede løsninger. Vi
-              tilpasser vores service til dine specifikke behov. Få dit hjem
-              og have tilbage i perfekt stand – kontakt os i dag for et
-              uforpligtende tilbud!
-            </p>
-          </div>
-          
-        </li>
-      </ul>
-    </section>
-
-
-
-
-
-
-    <section class="about-us" id="about-us">
-      <div class="container">
-        <h2 class="service-title about-us-header-title">Om os</h2>
-        <div class="about-us-content">
-          <div class="info-container">
-            <h3 class="about-us-box-title">Om Cleaning de luxe</h3>
-            <p class="about-us-box-text">
-              Hos Cleaning de luxe er vi dedikerede til at levere den højeste
-              kvalitet af rengøringstjenester. Vores erfarne team arbejder
-              hårdt og effektivt for at sikre, at dine lokaler altid fremstår
-              rene og velplejede. Vi stræber efter at levere en hurtig og
-              grundig service, der overgår dine forventninger.<br />
-              Vores mål er at gøre din hverdag lettere ved at tage ansvaret
-              for rengøringen, så du kan fokusere på det, der virkelig betyder
-              noget. Hos Cleaning de luxe går vi aldrig på kompromis med
-              kvaliteten, og vi arbejder altid hurtigt og effektivt for at
-              levere resultater, der gør dig tilfreds.
-            </p>
-          </div>
-          <div class="photo-container">
-            <a href="https://www.facebook.com/profile.php?id=61552082786921" class="icon facebook">
-              <span class="tooltip">Facebook</span>
-              <svg viewBox="0 0 320 512" height="1.2em" fill="#222222" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
-                </path>
-              </svg>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="main-section" id="main">
+          <div class="container">
+            <h1 class="main-title">RENGØRING PÅ HØJESTE NIVEAU</h1>
+            <h3 class="main-text">Fra 350Kr./time (ekskl. moms)</h3>
+            <a href="#contact"
+              ><button class="main-button all-button">Få et tilbud</button>
             </a>
-            <img class="about-us-photo" src="./images/company-person.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="slider-section" id="slider-section">
-      <div class="container">
-        <h2 class="slider-title">Før og efter + oplev forskellen</h2>
-        <div class="slider-window">
-          <div class="gallery-wrap">
-            <svg class="slider-btn" id="backBtn">
-              <use href="./images/button.svg#icon-back"></use>
-            </svg>
-            <div class="gallery">
-              <div>
-                <span>
-                  <div class="slider-block">
-                    <div class="before-after-wrapper">
-                      <img class="slider-image after" src="./imageAftrBefor/after-first.jpg" alt="After">
-                      <img class="slider-image before" src="./imageAftrBefor/before-first.jpg" alt="Before">
-                      <input type="range" class="slider-range" min="0" max="100" value="50">
-                    </div>
-                  </div>
-                </span>
-                <span>
-                  <div class="slider-block">
-                    <div class="before-after-wrapper">
-                      <img class="slider-image after" src="./imageAftrBefor/1-1.jpg" alt="After">
-                      <img class="slider-image before" src="./imageAftrBefor/1-2.jpg" alt="Before">
-                      <input type="range" class="slider-range" min="0" max="100" value="50">
-                    </div>
-                  </div>
-                </span>
-                <span>
-                  <div class="slider-block">
-                    <div class="before-after-wrapper">
-                      <img class="slider-image after" src="./imageAftrBefor/2-2.jpg" alt="After">
-                      <img class="slider-image before" src="./imageAftrBefor/2-1.jpg" alt="Before">
-                      <input type="range" class="slider-range" min="0" max="100" value="50">
-                    </div>
-                  </div>
-                </span>
+            <p class="phrase">pæne omgivelser og tid til det du elsker</p>
+          </div>
+        </section>
+
+        <section class="why-us">
+          <div class="container container-why-us-window">
+            <h2 class="why-us-title">Hvorfor vælge os?</h2>
+            <div class="why-us-window">
+              <p class="why-us-text">
+                <span class="why-us-subtitle delay1">**Særligt tilbud**</span>
+                book din første rengøring i dag og få 20 % rabat! Forvandl dit
+                rum til en skinnende oase. Kontakt os nu for et gratis tilbud!
+              </p>
+            </div>
+            <div class="why-us-window-center">
+              <div class="why-us-windows-container">
+                <div class="why-us-window">
+                  <p class="why-us-text">
+                    <span class="why-us-subtitle delay2"
+                      >**Professionelt team**</span
+                    >
+                    vores erfarne rengøringsassistenter er forpligtet til at yde
+                    en førsteklasses service. Førsteklasses service.
+                  </p>
+                </div>
+
+                <div class="why-us-window">
+                  <p class="why-us-text">
+                    <span class="why-us-subtitle delay3"
+                      >**Fleksible tidsplaner**</span
+                    >
+                    vi tilpasser os dit travle liv ved at lave skræddersyede
+                    rengøringsplaner. skræddersyede rengøringsplaner.
+                  </p>
+                </div>
               </div>
-              <div>
-                <span>
-                  <div class="slider-block">
-                    <div class="before-after-wrapper">
-                      <img class="slider-image after" src="./imageAftrBefor/3-1.jpg" alt="After">
-                      <img class="slider-image before" src="./imageAftrBefor/3-2.jpg" alt="Before">
-                      <input type="range" class="slider-range" min="0" max="100" value="50">
-                    </div>
-                  </div>
-                </span>
-                <span>
-                  <div class="slider-block">
-                    <div class="before-after-wrapper">
-                      <img class="slider-image after" src="./imageAftrBefor/4-1.jpg" alt="After">
-                      <img class="slider-image before" src="./imageAftrBefor/4-2.jpg" alt="Before">
-                      <input type="range" class="slider-range" min="0" max="100" value="50">
-                    </div>
-                  </div>
-                </span>
-                <span>
-                  <div class="slider-block">
-                    <div class="before-after-wrapper">
-                      <img class="slider-image after" src="./imageAftrBefor/5-1.jpg" alt="After">
-                      <img class="slider-image before" src="./imageAftrBefor/5-2.jpg" alt="Before">
-                      <input type="range" class="slider-range" min="0" max="100" value="50">
-                    </div>
-                  </div>
-                </span>
+              <img
+                src="./images/greenlogo.png"
+                alt=""
+                class="why-us-window-img"
+              />
+            </div>
+            <div class="why-us-window">
+              <p class="why-us-text">
+                <span class="why-us-subtitle delay4"
+                  >**Miljøvenlige produkter**</span
+                >
+                vi bruger sikre, ugiftige rengøringsprodukter til et sundere
+                hjem. sundt hjem.
+              </p>
+            </div>
+
+            <div class="why-us-window">
+              <p class="why-us-text">
+                <span class="why-us-subtitle delay5"
+                  >**Tilfredshedsgaranti**</span
+                >
+                vi er ikke tilfredse, før du er det!
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="services" id="services">
+          <h2 class="service-title">VORES TJENESTER</h2>
+          <ul class="services-list">
+            <li class="services-card">
+              <div class="services-icon-block">
+                <div>
+                  <svg class="services-icons">
+                    <use href="./images/symbol-defs.svg#icon-house"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="services-subtitle">Privatrengøring</p>
+                  <a href="#contact">
+                    <button class="all-button services-btn">
+                      Få et tilbud
+                    </button>
+                  </a>
+                </div>
+                <p class="servises-price">Priser fra kr. 350</p>
+              </div>
+              <div class="services-card-info">
+                <p class="servises-info">
+                  Trænger dit hjem til en grundig rengøring? Lad os sikre dig
+                  pålidelig og effektiv privat rengøring, så du kan bruge mere
+                  tid på det, du holder af! Vi klarer alt fra loft til gulv og
+                  fra køkken til badeværelse. Så nyd bar dit rent, skinnende
+                  støv- og pletfrit hjem!
+                </p>
+              </div>
+            </li>
+            <li class="services-card">
+              <div class="services-icon-block">
+                <div>
+                  <svg class="services-icons">
+                    <use href="./images/symbol-defs.svg#icon-desk"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="services-subtitle">Erhvervs- og kontorrengørning</p>
+                  <a href="#contact">
+                    <button class="all-button services-btn">
+                      Få et tilbud
+                    </button>
+                  </a>
+                </div>
+                <p class="servises-price">Priser fra kr. 370</p>
+              </div>
+              <div class="services-card-info">
+                <p class="servises-info">
+                  Er dit kontor eller produktion blevet overset i rengøringen?
+                  Lad os tilbyde skræddersyede renrøringstjenester, der sikrer
+                  et sundt og inspirerende arbejdsmiljø. Brug vores professional
+                  team og af de bedste produkter og metoder for at fjerne støv,
+                  snavs og bakterier.
+                </p>
+              </div>
+            </li>
+            <li class="services-card">
+              <div class="services-icon-block">
+                <div>
+                  <svg class="services-icons">
+                    <use
+                      href="./images/symbol-defs.svg#icon-planting-flower"
+                    ></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="services-subtitle">Havearbejde</p>
+                  <a href="#contact">
+                    <button class="all-button services-btn">
+                      Få et tilbud
+                    </button>
+                  </a>
+                </div>
+                <p class="servises-price" style="left: -20px">
+                  Priser fra kr. 380
+                </p>
+              </div>
+              <div class="services-card-info">
+                <p class="servises-info">
+                  Trænger din have til kærlig pleje og opmærksomhed? Lad os
+                  hjælpe dig med at skabe den have, du altid har drømt om! Vores
+                  dedikerede team af haveeksperter står klar til at udføre alt
+                  fra beskæring og græsslåning til anlæggelse af smukke
+                  blomsterbede. <br />
+                </p>
+              </div>
+            </li>
+            <li class="services-card">
+              <div class="services-icon-block">
+                <div>
+                  <svg class="services-icons">
+                    <use href="./images/symbol-defs.svg#icon-boxes"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="services-subtitle">Rengøring efter renovering</p>
+                  <a href="#contact">
+                    <button class="all-button services-btn">
+                      Få et tilbud
+                    </button>
+                  </a>
+                </div>
+                <p class="servises-price">Priser fra kr. 370</p>
+              </div>
+              <div class="services-card-info">
+                <p class="servises-info">
+                  Har du lige gennemført en renovering? Lad os hjælpe med at
+                  fjerne alt støv og rod! Vores specialiserede rengøring efter
+                  renovering sørger for, at dit hjem er klar til at blive nydt.
+                  <br />
+                </p>
+              </div>
+            </li>
+            <li class="services-card">
+              <div class="services-icon-block">
+                <div>
+                  <svg class="services-icons">
+                    <use href="./images/move-repair.svg#icon-moving"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="services-subtitle">
+                    Flyterengøring og slutrengøring
+                  </p>
+                  <a href="#contact">
+                    <button class="all-button services-btn">
+                      Få et tilbud
+                    </button>
+                  </a>
+                </div>
+                <p class="servises-price">Priser fra kr. 360</p>
+              </div>
+              <div class="services-card-info">
+                <p class="servises-info">
+                  Skal du flytte? Eller bar at gøre rent omfattende og grundigt?
+                  Lad os tage os af denne opgave! Vores specialiserede
+                  (flytterengøring / hovedrengøring) sikrer, at dit hjem
+                  fremstår perfekt og skinnende rent, så du kan fokusere på det,
+                  der virkelig betyder noget. <br />
+                </p>
+              </div>
+            </li>
+            <li class="services-card">
+              <div class="services-icon-block">
+                <div>
+                  <svg class="services-icons">
+                    <use href="./images/move-repair.svg#icon-repair"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="services-subtitle">Reparationsarbejde</p>
+                  <a href="#contact">
+                    <button class="all-button services-btn">
+                      Få et tilbud
+                    </button>
+                  </a>
+                </div>
+                <p class="servises-price">Priser fra kr. 360</p>
+              </div>
+              <div class="services-card-info">
+                <p class="servises-info">
+                  Trænger din have til kærlig pleje og opmærksomhed? Lad os
+                  hjælpe dig med at skabe den have, du altid har drømt om! Vores
+                  dedikerede team af haveeksperter står klar til at udføre alt
+                  fra beskæring og græsslåning til anlæggelse af smukke
+                  blomsterbede.
+                </p>
+              </div>
+            </li>
+
+            <li class="services-card">
+              <div class="services-icon-block">
+                <div>
+                  <svg class="services-icons">
+                    <use href="./images/symbol-defs.svg#icon-burger"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="services-subtitle">Og mere...</p>
+
+                  <a href="#contact"
+                    ><button class="all-button services-btn">
+                      Få et tilbud
+                    </button>
+                  </a>
+                </div>
+                <p class="servises-price"></p>
+              </div>
+              <div class="services-card-info">
+                <p class="servises-info">
+                  Tøv ikke med at spørge efter vores skræddersyede løsninger. Vi
+                  tilpasser vores service til dine specifikke behov. Få dit hjem
+                  og have tilbage i perfekt stand – kontakt os i dag for et
+                  uforpligtende tilbud!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="about-us" id="about-us">
+          <div class="container">
+            <h2 class="service-title about-us-header-title">Om os</h2>
+            <div class="about-us-content">
+              <div class="info-container">
+                <h3 class="about-us-box-title">Om S&V MULTISERVISE</h3>
+                <p class="about-us-box-text">
+                  Hos S&V MULTISERVISE er vi dedikerede til at levere den
+                  højeste kvalitet af rengøringstjenester. Vores erfarne team
+                  arbejder hårdt og effektivt for at sikre, at dine lokaler
+                  altid fremstår rene og velplejede. Vi stræber efter at levere
+                  en hurtig og grundig service, der overgår dine
+                  forventninger.<br />
+                  Vores mål er at gøre din hverdag lettere ved at tage ansvaret
+                  for rengøringen, så du kan fokusere på det, der virkelig
+                  betyder noget. Hos S&V MULTISERVISE går vi aldrig på kompromis
+                  med kvaliteten, og vi arbejder altid hurtigt og effektivt for
+                  at levere resultater, der gør dig tilfreds.
+                </p>
+              </div>
+              <div class="photo-container">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61552082786921"
+                  class="icon facebook"
+                >
+                  <span class="tooltip">Facebook</span>
+                  <svg
+                    viewBox="0 0 320 512"
+                    height="1.2em"
+                    fill="#222222"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                    ></path>
+                  </svg>
+                </a>
+                <img
+                  class="about-us-photo"
+                  src="./images/company-person.png"
+                  alt=""
+                />
               </div>
             </div>
-            <svg class="slider-btn" id="nextBtn">
-              <use href="./images/button.svg#icon-next"></use>
-            </svg>
           </div>
-          <p class="slider-text">
-            Skab en ren og strålende forandring - oplev forskellen med vores før- og efter billeder! Nu er der frisk og
-            velduftende atmosfære, skinnende overflader og en generel følelse af renhed og orden.
-          </p>
-        </div>
-      </div>
-    </section>
+        </section>
 
-
-
-
-    <section class="contact-form" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-info">
-            <h3 class="contact-title">Kontakt</h3>
-            <p class="contact-text">
-              Velkommen til vores rengøringstjeneste! Udfyld venligst
-              formularen med dine kontaktoplysninger og rengøringsbehov, så
-              vender vi tilbage til dig hurtigst muligt for at arrangere en
-              passende tid til rengørin
-            </p>
-            <div>
-              <a href="mailto:cleaningdeluxe123@gmail.com">
-                <svg class="contact-icon">
-                  <use href="./images/footer.svg#icon-email-footer"></use>
+        <section class="slider-section" id="slider-section">
+          <div class="container">
+            <h2 class="slider-title">Før og efter + oplev forskellen</h2>
+            <div class="slider-window">
+              <div class="gallery-wrap">
+                <svg class="slider-btn" id="backBtn">
+                  <use href="./images/button.svg#icon-back"></use>
                 </svg>
-              </a>
-
-              <a href="https://www.facebook.com/profile.php?id=61552082786921">
-                <svg class="contact-icon">
-                  <use href="./images/footer.svg#icon-facebook-footer"></use>
+                <div class="gallery">
+                  <div>
+                    <span>
+                      <div class="slider-block">
+                        <div class="before-after-wrapper">
+                          <img
+                            class="slider-image after"
+                            src="./imageAftrBefor/after-first.jpg"
+                            alt="After"
+                          />
+                          <img
+                            class="slider-image before"
+                            src="./imageAftrBefor/before-first.jpg"
+                            alt="Before"
+                          />
+                          <input
+                            type="range"
+                            class="slider-range"
+                            min="0"
+                            max="100"
+                            value="50"
+                          />
+                        </div>
+                      </div>
+                    </span>
+                    <span>
+                      <div class="slider-block">
+                        <div class="before-after-wrapper">
+                          <img
+                            class="slider-image after"
+                            src="./imageAftrBefor/1-1.jpg"
+                            alt="After"
+                          />
+                          <img
+                            class="slider-image before"
+                            src="./imageAftrBefor/1-2.jpg"
+                            alt="Before"
+                          />
+                          <input
+                            type="range"
+                            class="slider-range"
+                            min="0"
+                            max="100"
+                            value="50"
+                          />
+                        </div>
+                      </div>
+                    </span>
+                    <span>
+                      <div class="slider-block">
+                        <div class="before-after-wrapper">
+                          <img
+                            class="slider-image after"
+                            src="./imageAftrBefor/2-2.jpg"
+                            alt="After"
+                          />
+                          <img
+                            class="slider-image before"
+                            src="./imageAftrBefor/2-1.jpg"
+                            alt="Before"
+                          />
+                          <input
+                            type="range"
+                            class="slider-range"
+                            min="0"
+                            max="100"
+                            value="50"
+                          />
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                  <div>
+                    <span>
+                      <div class="slider-block">
+                        <div class="before-after-wrapper">
+                          <img
+                            class="slider-image after"
+                            src="./imageAftrBefor/3-1.jpg"
+                            alt="After"
+                          />
+                          <img
+                            class="slider-image before"
+                            src="./imageAftrBefor/3-2.jpg"
+                            alt="Before"
+                          />
+                          <input
+                            type="range"
+                            class="slider-range"
+                            min="0"
+                            max="100"
+                            value="50"
+                          />
+                        </div>
+                      </div>
+                    </span>
+                    <span>
+                      <div class="slider-block">
+                        <div class="before-after-wrapper">
+                          <img
+                            class="slider-image after"
+                            src="./imageAftrBefor/4-1.jpg"
+                            alt="After"
+                          />
+                          <img
+                            class="slider-image before"
+                            src="./imageAftrBefor/4-2.jpg"
+                            alt="Before"
+                          />
+                          <input
+                            type="range"
+                            class="slider-range"
+                            min="0"
+                            max="100"
+                            value="50"
+                          />
+                        </div>
+                      </div>
+                    </span>
+                    <span>
+                      <div class="slider-block">
+                        <div class="before-after-wrapper">
+                          <img
+                            class="slider-image after"
+                            src="./imageAftrBefor/5-1.jpg"
+                            alt="After"
+                          />
+                          <img
+                            class="slider-image before"
+                            src="./imageAftrBefor/5-2.jpg"
+                            alt="Before"
+                          />
+                          <input
+                            type="range"
+                            class="slider-range"
+                            min="0"
+                            max="100"
+                            value="50"
+                          />
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <svg class="slider-btn" id="nextBtn">
+                  <use href="./images/button.svg#icon-next"></use>
                 </svg>
-              </a>
-              <a href="tel:+4581941150">
-                <svg class="contact-icon">
-                  <use href="./images/footer.svg#icon-phone"></use>
-                </svg>
-              </a>
+              </div>
+              <p class="slider-text">
+                Skab en ren og strålende forandring - oplev forskellen med vores
+                før- og efter billeder! Nu er der frisk og velduftende
+                atmosfære, skinnende overflader og en generel følelse af renhed
+                og orden.
+              </p>
             </div>
           </div>
+        </section>
 
-          <form class="form" id="contact-form" action="https://formspree.io/f/meojbljl" method="POST">
-            <div class="form-group">
-              <label class="contact-label" for="name">Navn:</label>
-              <input type="text" name="name" id="name" class="box" required placeholder="[Fulde navn]"
-                autocomplete="off" />
+        <section class="contact-form" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="contact-info">
+                <h3 class="contact-title">Kontakt</h3>
+                <p class="contact-text">
+                  Velkommen til vores rengøringstjeneste! Udfyld venligst
+                  formularen med dine kontaktoplysninger og rengøringsbehov, så
+                  vender vi tilbage til dig hurtigst muligt for at arrangere en
+                  passende tid til rengørin
+                </p>
+                <div>
+                  <a href="mailto:cleaningdeluxe123@gmail.com">
+                    <svg class="contact-icon">
+                      <use href="./images/footer.svg#icon-email-footer"></use>
+                    </svg>
+                  </a>
+
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61552082786921"
+                  >
+                    <svg class="contact-icon">
+                      <use
+                        href="./images/footer.svg#icon-facebook-footer"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="tel:+4581941150">
+                    <svg class="contact-icon">
+                      <use href="./images/footer.svg#icon-phone"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <form
+                class="form"
+                id="contact-form"
+                action="https://formspree.io/f/meojbljl"
+                method="POST"
+              >
+                <div class="form-group">
+                  <label class="contact-label" for="name">Navn:</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="box"
+                    required
+                    placeholder="[Fulde navn]"
+                    autocomplete="off"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="contact-label" for="email">E-mail:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="box"
+                    required
+                    placeholder="[E-mailadresse]"
+                    autocomplete="off"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="contact-label" for="number"
+                    >Telefonnummer:</label
+                  >
+                  <input
+                    type="tel"
+                    name="number"
+                    id="number"
+                    class="box"
+                    required
+                    placeholder="[Telefonnummer]"
+                    autocomplete="off"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="contact-label" for="address"
+                    >Adresse, hvor rengøringen skal finde sted:</label
+                  >
+                  <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    class="box"
+                    required
+                    placeholder="[Indtast adresse]"
+                    autocomplete="off"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="contact-label" for="cleaning-type"
+                    >Type af rengøring ønsket:</label
+                  >
+                  <input
+                    type="text"
+                    name="cleaning-type"
+                    id="cleaning-type"
+                    class="box"
+                    required
+                    placeholder="[Almindelig rengøring, flytterengøring, vinduespudsning]"
+                    autocomplete="off"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="contact-label" for="datetime"
+                    >Foretrukken dato og tidspunkt for rengøring:</label
+                  >
+                  <input
+                    type="datetime-local"
+                    name="preferred-datetime"
+                    id="datetime"
+                    class="box"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="contact-label" for="message"
+                    >Yderligere oplysninger eller specielle anmodninger:</label
+                  >
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="box"
+                    cols="20"
+                    rows="5"
+                    required
+                    placeholder="[Indtast eventuelle særlige behov]"
+                    autocomplete="off"
+                  ></textarea>
+                </div>
+
+                <div class="form-submit">
+                  <button type="submit" class="all-button form-btn">
+                    Send
+                  </button>
+                  <p id="response-message"></p>
+                </div>
+              </form>
             </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <section class="wrapper-footer">
+          <ul class="footer-list container">
+            <li>
+              <a class="footer-text" href="mailto:cleaningdeluxe123@gmail.com">
+                cleaningdeluxe123@gmail.com
+              </a>
+            </li>
+            <li class="footer-text">©2024 S&V MULTISERVISE</li>
+            <li>
+              <a class="footer-text" href="tel:+4581941150">+4581941150</a>
+            </li>
+          </ul>
+        </section>
+      </footer>
+    </div>
 
-            <div class="form-group">
-              <label class="contact-label" for="email">E-mail:</label>
-              <input type="email" name="email" id="email" class="box" required placeholder="[E-mailadresse]"
-                autocomplete="off" />
-            </div>
-
-            <div class="form-group">
-              <label class="contact-label" for="number">Telefonnummer:</label>
-              <input type="tel" name="number" id="number" class="box" required placeholder="[Telefonnummer]"
-                autocomplete="off" />
-            </div>
-
-            <div class="form-group">
-              <label class="contact-label" for="address">Adresse, hvor rengøringen skal finde sted:</label>
-              <input type="text" name="address" id="address" class="box" required placeholder="[Indtast adresse]"
-                autocomplete="off" />
-            </div>
-
-            <div class="form-group">
-              <label class="contact-label" for="cleaning-type">Type af rengøring ønsket:</label>
-              <input type="text" name="cleaning-type" id="cleaning-type" class="box" required
-                placeholder="[Almindelig rengøring, flytterengøring, vinduespudsning]" autocomplete="off" />
-            </div>
-
-            <div class="form-group">
-              <label class="contact-label" for="datetime">Foretrukken dato og tidspunkt for rengøring:</label>
-              <input type="datetime-local" name="preferred-datetime" id="datetime" class="box" required />
-            </div>
-
-            <div class="form-group">
-              <label class="contact-label" for="message">Yderligere oplysninger eller specielle anmodninger:</label>
-              <textarea name="message" id="message" class="box" cols="20" rows="5" required
-                placeholder="[Indtast eventuelle særlige behov]" autocomplete="off"></textarea>
-            </div>
-
-            <div class="form-submit">
-              <button type="submit" class="all-button form-btn">Send</button>
-              <p id="response-message"></p>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-  </main>
-  <footer>
-    <section class="wrapper-footer">
-      <ul class="footer-list container">
-        <li>
-          <a class="footer-text" href="mailto:cleaningdeluxe123@gmail.com">
-            cleaningdeluxe123@gmail.com
-          </a>
-        </li>
-        <li class="footer-text">©2024 Cleaning de luxe</li>
-        <li>
-          <a class="footer-text" href="tel:+4581941150">+4581941150</a>
-        </li>
-      </ul>
-    </section>
-  </footer>
-
-
-</div>
-  
-
-  <script src="./src/mobile-menu.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script>
-  <script src="./src/index.js"></script>
-  <script src="./src/contact-form.js"></script>
-</body>
-
+    <script src="./src/mobile-menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script>
+    <script src="./src/index.js"></script>
+    <script src="./src/contact-form.js"></script>
+  </body>
 </html>

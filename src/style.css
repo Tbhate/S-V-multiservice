@@ -113,7 +113,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-black-hover);
+  background-color: #436154;
   z-index: 9999;
   display: flex;
   justify-content: center;
@@ -442,7 +442,7 @@ a {
   height: 569px;
   text-align: right;
   padding: 188px 0;
-  background-image: url(../images/bgcleaning.jpg);
+  background-image: url(../images/bgmainphoto.png);
   background-size: cover;
   background-position: center;
   box-shadow: 0px 4px 5px 0px rgba(129, 129, 129, 0.4);
@@ -452,7 +452,7 @@ a {
 @media (max-width: 650px) {
   .main-section {
     background-color: #7c7c7c;
-    background-image: url(../images/company-person-mobile.jpg);
+    background-image: url(../images/bgmobiles.png);
     height: 400px;
   }
 }
@@ -465,7 +465,7 @@ a {
   font-weight: 700;
   line-height: 1.07;
   color: #ffffff;
-  background-image: linear-gradient(90deg, #ffffff, #b5ffdf);
+  background-image: linear-gradient(90deg, #36946b, #77d1aa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -481,7 +481,7 @@ a {
   font-size: calc(12px + (20 - 12) * ((100vw) / (1600 - 300)));
   font-weight: 600;
   color: var(--color-black);
-  background-image: linear-gradient(100deg, #ffffff, #b5ffdf);
+  background-image: linear-gradient(100deg, #36946b, #77d1aa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -516,7 +516,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   font-size: calc(10px + (14 - 10) * ((100vw) / (1600 - 300)));
-  background-image: linear-gradient(90deg, #ffffff, #b5ffdf);
+  background-image: linear-gradient(90deg, #36946b, #77d1aa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
@@ -695,12 +695,12 @@ a {
 
 .services {
   text-align: center;
-  background-image: url(/images/bgcleaningonos.jpg);
+  background-image: url(../images/bgcleaningonos.jpg);
   background-size: cover;
   background-position: center;
   padding: 70px 20px 70px 20px;
 
-  -webkit-mask-image: linear-gradient(
+  /* -webkit-mask-image: linear-gradient(
     to bottom,
     transparent,
     black 5%,
@@ -712,12 +712,14 @@ a {
   mask-image: linear-gradient(
     to bottom,
     transparent,
-    black 5%,
-    black 95%,
+    black 20%,
+    black 80%,
     transparent
   );
   mask-repeat: no-repeat;
-  mask-size: cover;
+  mask-size: cover; */
+  border: 1px solid rgba(129, 129, 129, 0.4);
+  box-shadow: 0px 0px 25px 5px rgba(129, 129, 129, 0.6);
 }
 
 .services-card {
@@ -1149,7 +1151,33 @@ a {
 /*                     *\
           slider
 \*                     */
+
+.slider-icon {
+  position: absolute;
+  z-index: 2;
+  bottom: -50px;
+  right: 0;
+  width: 150px;
+  align-items: center;
+}
+@media (max-width: 810px) {
+  .slider-icon {
+    top: 350px;
+    left: 55%;
+    transform: translateX(-55%);
+  }
+}
+@media (max-width: 386px) {
+  .slider-icon {
+    top: 380px;
+  }
+}
+@media (max-width: 610px) {
+  .slider-icon {
+  }
+}
 .slider-section {
+  position: relative;
   padding: 70px 0;
 }
 
@@ -1338,6 +1366,50 @@ a {
 /*                     *\
       Contact form
 \*                     */
+.leaf-contact-icon {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  z-index: -1;
+  top: 20px;
+  left: 90px;
+}
+@media (max-width: 1100px) {
+  .leaf-contact-icon {
+    left: 90px;
+    width: 300px;
+  }
+}
+@media (max-width: 650px) {
+  .leaf-contact-icon {
+    left: 120px;
+    width: 200px;
+  }
+}
+.leaf-contact-icon2 {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  z-index: -1;
+  bottom: 200px;
+  left: 90px;
+  rotate: 150deg;
+}
+@media (max-width: 1100px) {
+  .leaf-contact-icon2 {
+    left: 90;
+    width: 300px;
+  }
+}
+@media (max-width: 650px) {
+  .leaf-contact-icon2 {
+    top: 400px;
+    width: 200px;
+    height: 300px;
+    rotate: 180deg;
+    right: 0;
+  }
+}
 
 .contact-form {
   box-shadow: 0px -4px 5px 0px rgba(129, 129, 129, 0.4);

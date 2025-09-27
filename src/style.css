@@ -709,9 +709,10 @@ a {
   flex-basis: 100%;
   flex: 1 1 250px;
   height: auto;
-  background: #489b76;
+  background: linear-gradient(to top left, #489b76, #5fd19e);
+
   border-radius: 12px;
-  border: 1px solid #479a75d8;
+  border: 1px solid #5fd19e;
   box-shadow: 5px 5px 10px 0px rgb(126, 126, 126);
 }
 
@@ -1609,8 +1610,9 @@ a {
   flex: 1 1 400px;
   max-width: 450px;
   height: auto;
-  background-color: #479a75;
+  background-color: #f6f6f6;
   border-radius: 12px;
+  border: 1px solid #8a8a8a;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1618,7 +1620,7 @@ a {
 }
 
 .rev-comment {
-  color: #f8f2e8;
+  color: #2f393e;
   font-size: calc(12px + (14 - 12) * ((100vw) / (1600 - 300)));
   font-weight: 400;
   margin-bottom: 10px;
@@ -1626,7 +1628,7 @@ a {
 .rev-comment-user {
   margin: 0;
   font-size: calc(14px + (18 - 14) * ((100vw) / (1600 - 300)));
-  color: #f8f2e8;
+  color: #2f393e;
   font-weight: 600;
 }
 .user {
@@ -1640,7 +1642,7 @@ a {
   height: 45px;
   border-radius: 6px;
 
-  background: #f8f2e8;
+  background: #c9c9c9;
 }
 @media (max-width: 650px) {
   .user-block {
@@ -1649,14 +1651,14 @@ a {
   }
 }
 .user-container {
-  border: 2px solid #377559;
+  border: 2px solid #2f393e;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50px;
   height: 50px;
   border-radius: 18px;
-  background-color: #f8f2e8;
+  background-color: #c9c9c9;
 }
 @media (max-width: 650px) {
   .user-container {
@@ -1687,7 +1689,7 @@ a {
   align-items: center;
 }
 .eco-photo:last-child {
-  height: 180px;
+  height: 160px;
   width: 280px;
 }
 .eco-photo {
@@ -1695,11 +1697,11 @@ a {
   height: 180px;
 }
 
-/* phone */
+/* phone and scroll*/
 .phone-icon {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 50px;
+  right: 50px;
   width: 70px;
   height: 70px;
   background-color: #2e8e64;

@@ -1126,35 +1126,29 @@ a {
           slider
 \*                     */
 
+/* ---------------------- Иконка ---------------------- */
 .slider-icon {
   position: absolute;
   z-index: 2;
-  bottom: -50px;
+  bottom: -45px;
   right: 0;
   width: 150px;
   align-items: center;
 }
-@media (max-width: 810px) {
+
+@media (max-width: 510px) {
   .slider-icon {
-    top: 350px;
-    left: 55%;
-    transform: translateX(-55%);
+    display: none;
   }
 }
-@media (max-width: 386px) {
-  .slider-icon {
-    top: 380px;
-  }
-}
-@media (max-width: 610px) {
-  .slider-icon {
-  }
-}
+
+/* ---------------------- Секция ---------------------- */
 .slider-section {
   position: relative;
   padding: 70px 0;
 }
 
+/* ---------------------- Заголовок ---------------------- */
 .slider-title {
   background: linear-gradient(to bottom right, #10232ed3, var(--color-black));
   -webkit-background-clip: text;
@@ -1166,9 +1160,10 @@ a {
   font-weight: 700;
 }
 
+/* ---------------------- Окно карусели ---------------------- */
 .slider-window {
   max-width: 100%;
-  background: linear-gradient(0deg, #10232ed3, var(--color-black));
+  background: rgba(37, 80, 40, 0.8);
   border-radius: 12px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 66, 53, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -1179,10 +1174,12 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: rgba(37, 80, 40, 0.8);
   backdrop-filter: blur(8px);
+  overflow: hidden; /* скрываем лишние фото */
+  border: 2px solid #4f7151;
 }
 
+/* ---------------------- Текст под каруселью ---------------------- */
 .slider-text {
   display: flex;
   justify-content: center;
@@ -1193,59 +1190,61 @@ a {
   max-width: 50%;
 }
 
+/* ---------------------- Слайды ---------------------- */
 .slider-block {
   position: relative;
   border-radius: 12px;
-  max-width: 250px;
+  min-width: 200px; /* минимальная ширина */
+  max-width: 250px; /* максимальная ширина */
+  flex: 1 0 auto; /* растягиваем в ряд, но не больше max-width */
+  margin: 0 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 4px solid rgba(58, 58, 58, 0.685);
+  overflow: hidden;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
+}
+
+/* Медиа-запросы для карточек */
+@media (max-width: 1100px) {
+  .slider-block {
+    min-width: 150px;
+    max-width: 180px;
+  }
 }
 
 @media (max-width: 810px) {
   .slider-block {
-    max-width: 160px;
+    min-width: 120px;
+    max-width: 150px;
   }
 }
 
+/* ---------------------- Before/After ---------------------- */
 .before-after-wrapper {
   position: relative;
   width: 100%;
 }
 
 .slider-image {
+  width: 100%;
+  height: auto; /* сохраняем пропорции */
   display: block;
   border-radius: 8px;
-  width: 250px;
-  height: 300px;
+  object-fit: cover;
 }
-
-@media (max-width: 810px) {
-  .slider-image {
-    display: block;
-    border-radius: 8px;
-    width: 155px;
-    height: auto;
-  }
-}
-
 .before {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 300px;
+  height: 100%;
   clip-path: inset(0 50% 0 0);
   transition: clip-path 0.2s ease;
 }
 
-@media (max-width: 810px) {
-  .before {
-    height: auto;
-  }
-}
-
+/* Слайдер для изменения before/after */
 .slider-range {
   margin: 0;
   position: absolute;
@@ -1277,31 +1276,15 @@ a {
   background: var(--color-primary);
 }
 
+/* ---------------------- Галерея / карусель ---------------------- */
 .gallery {
-  width: 830px;
-  height: 330px;
   display: flex;
-  overflow-x: scroll;
-  background: none;
-  scroll-behavior: smooth;
-}
-
-@media (max-width: 1100px) {
-  .gallery {
-    width: 550px;
-  }
-}
-
-@media (max-width: 810px) {
-  .gallery {
-    width: 185px;
-  }
+  width: max-content;
+  animation: scroll 40s linear infinite;
 }
 
 .gallery div {
-  height: auto;
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex; /* чтобы фото были в ряд */
 }
 
 .gallery span {
@@ -1312,30 +1295,23 @@ a {
   display: none;
 }
 
-.slider-btn {
-  width: 40px;
-  height: 40px;
-  fill: rgba(255, 255, 255, 0.356);
-  transition: 0.3s;
-  cursor: pointer;
-  margin: 20px;
-}
-
-@media (max-width: 810px) {
-  .slider-btn {
-    margin: 0px;
-  }
-}
-
-.slider-btn:hover {
-  fill: rgba(255, 255, 255, 0.856);
-}
+/* ---------------------- Кнопки (если нужны, можно удалить) ---------------------- */
 
 .gallery-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+}
+
+/* ---------------------- Анимация бесконечной прокрутки ---------------------- */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-40%);
+  }
 }
 
 /*                     *\

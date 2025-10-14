@@ -4,19 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>S&V MULTISERVISE</title>
+    <title>S&V Multiservice | Professionel rengøring i Aarhus</title>
 
     <meta
       name="description"
-      content="Hos S&V MULTISERVISE leverer vi kvalitetsrengøring med fokus på effektivitet, så dine lokaler altid fremstår rene og velplejede."
+      content="S&V Multiservice tilbyder professionel rengøring i Aarhus til både private og virksomheder. Vi leverer effektiv og pålidelig rengøring, så dine lokaler altid fremstår rene og indbydende."
     />
 
     <meta
       name="keywords"
-      content="S&V MULTISERVISE, Rengøring i Aarhus, professionel rengøring, Rengøring af hus, Kontorrengøring"
+      content="S&V MULTISERVIcE, Rengøring i Aarhus, professionel rengøring, Rengøring af hus, Kontorrengøring"
     />
 
-    <link rel="icon" href="/images/whitelogo.png" type="image/png" />
+    <link rel="icon" href="./images/logo.svg" type="image/svg+xml" />
+
+    <link
+      rel="icon"
+      href="/favicon-192x192.png"
+      type="image/png"
+      sizes="192x192"
+    />
+    <link rel="apple-touch-icon" href="/favicon-192x192.png" />
 
     <link rel="stylesheet" href="./src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,7 +44,7 @@
         <div class="container">
           <nav class="header-box">
             <a href="#main">
-              <button class="header-logo">S&V MULTISERVISE</button>
+              <button class="header-logo">S&V MULTISERVICE</button>
             </a>
             <ul class="header-nav">
               <li>
@@ -370,9 +378,9 @@
             <h2 class="service-title about-us-header-title">Om os</h2>
             <div class="about-us-content">
               <div class="info-container">
-                <h3 class="about-us-box-title">Om S&V MULTISERVISE</h3>
+                <h3 class="about-us-box-title">Om S&V MULTISERVICE</h3>
                 <p class="about-us-box-text">
-                  Hos S&V MULTISERVISE er vi dedikerede til at levere den
+                  Hos S&V MULTISERVICE er vi dedikerede til at levere den
                   højeste kvalitet af rengøringstjenester. Vores erfarne team
                   arbejder hårdt og effektivt for at sikre, at dine lokaler
                   altid fremstår rene og velplejede. Vi stræber efter at levere
@@ -380,7 +388,7 @@
                   forventninger.<br />
                   Vores mål er at gøre din hverdag lettere ved at tage ansvaret
                   for rengøringen, så du kan fokusere på det, der virkelig
-                  betyder noget. Hos S&V MULTISERVISE går vi aldrig på kompromis
+                  betyder noget. Hos S&V MULTISERVICE går vi aldrig på kompromis
                   med kvaliteten, og vi arbejder altid hurtigt og effektivt for
                   at levere resultater, der gør dig tilfreds.
                 </p>
@@ -420,9 +428,6 @@
             <h2 class="slider-title">Før og efter + oplev forskellen</h2>
             <div class="slider-window">
               <div class="gallery-wrap">
-                <svg class="slider-btn" id="backBtn">
-                  <use href="./images/button.svg#icon-back"></use>
-                </svg>
                 <div class="gallery">
                   <div>
                     <span>
@@ -567,9 +572,6 @@
                     </span>
                   </div>
                 </div>
-                <svg class="slider-btn" id="nextBtn">
-                  <use href="./images/button.svg#icon-next"></use>
-                </svg>
               </div>
               <p class="slider-text">
                 Skab en ren og strålende forandring - oplev forskellen med vores
@@ -614,6 +616,31 @@
                     <img class="user-block" src="./images/user.png" alt="" />
                   </div>
                   <p class="rev-comment-user">Peggy Törn</p>
+                </div>
+              </li>
+              <li class="reviews-card">
+                <p class="rev-comment">
+                  Hurtig og effektiv rengøring. Kan anbefales
+                </p>
+                <div class="user">
+                  <div class="user-container">
+                    <img class="user-block" src="./images/user.png" alt="" />
+                  </div>
+                  <p class="rev-comment-user">Lone Hindby</p>
+                </div>
+              </li>
+              <li class="reviews-card">
+                <p class="rev-comment">
+                  Cleaning deluxe gjorde et fantastisk stykke arbejde! De var
+                  utroligt flittige og arbejdsomme. Hele min lejlighed blev
+                  malet og rengjort overalt. Jeg er så glad for resultatet - Den
+                  varmeste anbefaling herfra!
+                </p>
+                <div class="user">
+                  <div class="user-container">
+                    <img class="user-block" src="./images/user.png" alt="" />
+                  </div>
+                  <p class="rev-comment-user">Magnus Günther Pedersen</p>
                 </div>
               </li>
               <li class="reviews-card">
@@ -807,7 +834,7 @@
                 cleaningdeluxe123@gmail.com
               </a>
             </li>
-            <li class="footer-text">©2023-2025 S&V MULTISERVISE</li>
+            <li class="footer-text">©2023-2025 S&V MULTISERVICE</li>
             <li>
               <a class="footer-text" href="tel:+4581941150">+4581941150</a>
             </li>
@@ -815,6 +842,10 @@
         </section>
       </footer>
     </div>
+    <script>
+      const gallery = document.querySelector(".gallery");
+      gallery.innerHTML += gallery.innerHTML;
+    </script>
 
     <script src="./src/mobile-menu.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script>
